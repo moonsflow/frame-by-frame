@@ -2,9 +2,10 @@
   "name": "frame-by-frame",
   "version": "0.1.0",
   "description": "Raspberry pi GIF viwer",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test mocha test.js",
+    "start": "node bin/www"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/moonsflow/frame-by-frame/issues"
   },
-  "homepage": "https://github.com/moonsflow/frame-by-frame#readme"
+  "homepage": "https://github.com/moonsflow/frame-by-frame#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "forecast.io": "0.0.9",
+    "giphy-api": "^1.1.15"
+  }
 }
