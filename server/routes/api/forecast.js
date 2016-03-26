@@ -1,20 +1,20 @@
-var express = require('express');
-var router = express.Router();
+import { Router } from 'express';
+import Forecast from 'forecast.io';
 
-var Forecast = require('forecast.io');
+const router = new Router();
 
-var API_KEY = 'f937b8d3a9abe4916e0e9fd8c21ae774';
-var LATITUDE = 37.4023;
-var LONGITUDE = 126.6717;
+const location = {
+  lat: 37.4023,
+  lng: 126.6717
+};
 
-var options = {
-  APIKey: API_KEY,
+const options = {
+  APIKey: 'f937b8d3a9abe4916e0e9fd8c21ae774',
   units: 'si',
   exclude: 'minutely,hourly,daily,flags,alerts'
 };
 
-var forecast = new Forecast(options);
-
+const forecast = new Forecast(options);
 
 /*
 {
@@ -41,14 +41,13 @@ var forecast = new Forecast(options);
 }
 */
 
-
 router.route('/weather')
   .get(function(request, response) {
-    forecast.get(LATITUDE, LONGITUDE, options, function (err, res, data) {
+    forecast.get(location.lat, location.lng, options, function (err, res, data) {
       if (err) throw err;
       response.json(data);
     });
   });
 
 
-module.exports = router;
+export default router;

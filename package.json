@@ -4,8 +4,8 @@
   "description": "Raspberry pi GIF viwer",
   "main": "app.js",
   "scripts": {
-    "test": "NODE_ENV=test mocha test.js",
-    "start": "node bin/www"
+    "start": "NODE_ENV=development node index.js",
+    "dev": "NODE_ENV=development nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -25,9 +25,19 @@
   },
   "homepage": "https://github.com/moonsflow/frame-by-frame#readme",
   "dependencies": {
+    "babel-core": "^6.7.4",
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
     "forecast.io": "0.0.9",
     "giphy-api": "^1.1.15"
+  },
+  "devDependencies": {
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-register": "^6.7.2",
+    "webpack": "^1.12.14"
   }
 }
