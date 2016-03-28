@@ -19,7 +19,8 @@
     "forecast.io"
   ],
   "author": "Daniel Moon",
-  "license": "ISC",
+  "license": "license",
+  "private": true,
   "bugs": {
     "url": "https://github.com/moonsflow/frame-by-frame/issues"
   },
