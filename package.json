@@ -27,13 +27,19 @@
   "dependencies": {
     "babel-core": "^6.7.4",
     "body-parser": "^1.15.0",
+    "es6-promise": "^3.1.2",
+    "exports-loader": "^0.6.3",
     "express": "^4.13.4",
     "forecast.io": "0.0.9",
     "giphy-api": "^1.1.15",
+    "imports-loader": "^0.6.5",
+    "jquery": "^2.2.2",
     "lodash": "^4.6.1",
+    "moment": "^2.12.0",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
-    "webfontloader": "^1.6.24"
+    "webfontloader": "^1.6.24",
+    "whatwg-fetch": "^0.11.0"
   },
   "devDependencies": {
     "babel-eslint": "^6.0.0",

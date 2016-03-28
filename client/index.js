@@ -1,1 +1,3 @@
-require('../static/css/style.scss');
+import '../static/css/style.scss';
+import './gif';
+import './clock';
