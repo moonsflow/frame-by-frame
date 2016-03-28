@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
@@ -37,6 +38,9 @@ module.exports = {
   },
   
   plugins: [
+      new HtmlWebpackPlugin({
+        template: './public/index.html'
+      }),
       new webpack.HotModuleReplacementPlugin(),
       new webpack.DefinePlugin({
         'precess.env': {
