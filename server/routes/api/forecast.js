@@ -5,13 +5,13 @@ const router = new Router();
 
 const location = {
   lat: 37.4023,
-  lng: 126.6717
+  lng: 126.6717,
 };
 
 const options = {
   APIKey: 'f937b8d3a9abe4916e0e9fd8c21ae774',
   units: 'si',
-  exclude: 'minutely,hourly,daily,flags,alerts'
+  exclude: 'minutely,hourly,daily,flags,alerts',
 };
 
 const forecast = new Forecast(options);
@@ -42,8 +42,8 @@ const forecast = new Forecast(options);
 */
 
 router.route('/weather')
-  .get(function(request, response) {
-    forecast.get(location.lat, location.lng, options, function (err, res, data) {
+  .get((request, response) => {
+    forecast.get(location.lat, location.lng, options, (err, res, data) => {
       if (err) throw err;
       response.json(data);
     });

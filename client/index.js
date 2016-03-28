@@ -1,3 +1,1 @@
-import fontLoader from './fontloader';
-
-fontLoader();
+require('../static/css/style.scss');

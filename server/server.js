@@ -9,14 +9,14 @@ import webpackHotMiddleware from 'webpack-hot-middleware';
 
 // API
 import forecast from './routes/api/forecast';
-import giphy from './routes/api/giphy'
+import giphy from './routes/api/giphy';
 
 const app = new Express();
 const port = process.env.PORT || 3000;
 
 if (process.env.NODE_ENV !== 'production') {
   const compiler = webpack(config);
-  app.use(webpackDevMiddleware(compiler, { noInfo:true, publicPath: config.output.publicPath }));
+  app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output.publicPath }));
   app.use(webpackHotMiddleware(compiler));
 }
 
