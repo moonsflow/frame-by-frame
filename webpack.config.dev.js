@@ -42,6 +42,11 @@ module.exports = {
       template: './static/index.html',
     }),
     new webpack.HotModuleReplacementPlugin(),
+    // http://mts.io/2015/04/08/webpack-shims-polyfills/
+    new webpack.ProvidePlugin({
+      'Promise': 'es6-promise',
+      'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch',
+    }),
     new webpack.DefinePlugin({
       'precess.env': {
         CLIENT: JSON.stringify(true),
