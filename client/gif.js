@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import '../static/css/gif.scss';
 
-const SEARCH_TAG = 'spring';
+const SEARCH_TAG = 'art';
 const SEARCH_LENGTH = 30;
 const LOOP_DELAY = 7000;
 
