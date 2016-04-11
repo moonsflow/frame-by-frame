@@ -8,12 +8,30 @@
   background-repeat: no-repeat;
 
   &:after {
+    $padding: 0;
     position: absolute;
     content: '';
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(#000, 0.7);
+    top: $padding;
+    bottom: $padding;
+    left: $padding;
+    right: $padding;
+    background: rgba(#fff, 0.9);
+
+    //background: rgba(254,162,58,1);
+    //background: -moz-linear-gradient(top, rgba(254,162,58,1) 0%, rgba(152,116,77,1) 54%, rgba(59,77,104,1) 100%);
+    //background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,162,58,1)), color-stop(54%, rgba(152,116,77,1)), color-stop(100%, rgba(59,77,104,1)));
+    //background: -webkit-linear-gradient(top, rgba(254,162,58,1) 0%, rgba(152,116,77,1) 54%, rgba(59,77,104,1) 100%);
+    //background: -o-linear-gradient(top, rgba(254,162,58,1) 0%, rgba(152,116,77,1) 54%, rgba(59,77,104,1) 100%);
+    //background: -ms-linear-gradient(top, rgba(254,162,58,1) 0%, rgba(152,116,77,1) 54%, rgba(59,77,104,1) 100%);
+    //background: linear-gradient(to bottom, rgba(254,162,58,1) 0%, rgba(152,116,77,1) 54%, rgba(59,77,104,1) 100%);
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fea23a', endColorstr='#3b4d68', GradientType=0 );
+
+    //background: -moz-linear-gradient(top, rgba(94,93,121,1) 0%, rgba(155,111,134,1) 43%, rgba(212,120,138,1) 86%, rgba(212,120,138,1) 100%);
+    //background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(94,93,121,1)), color-stop(43%, rgba(155,111,134,1)), color-stop(86%, rgba(212,120,138,1)), color-stop(100%, rgba(212,120,138,1)));
+    //background: -webkit-linear-gradient(top, rgba(94,93,121,1) 0%, rgba(155,111,134,1) 43%, rgba(212,120,138,1) 86%, rgba(212,120,138,1) 100%);
+    //background: -o-linear-gradient(top, rgba(94,93,121,1) 0%, rgba(155,111,134,1) 43%, rgba(212,120,138,1) 86%, rgba(212,120,138,1) 100%);
+    //background: -ms-linear-gradient(top, rgba(94,93,121,1) 0%, rgba(155,111,134,1) 43%, rgba(212,120,138,1) 86%, rgba(212,120,138,1) 100%);
+    //background: linear-gradient(to bottom, rgba(94,93,121,1) 0%, rgba(155,111,134,1) 43%, rgba(212,120,138,1) 86%, rgba(212,120,138,1) 100%);
+    opacity: 0.9;
   }
 }
